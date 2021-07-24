@@ -9,208 +9,300 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <style>
-            .checked {
-              color: rgb(227, 243, 1);
-            }
-            </style>
-    </head>
+    <style>
+        .checked {
+            color: rgb(227, 243, 1);
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #btn {
+            font-size: 25px;
+        }
+    </style>
+</head>
 
 <body>
     <form>
         <div>
             <label style="color:black; font-weight: bold;">Name<span style="color:red">*</span></label>
             <div class="form-row">
-            <div class="col">
-            <input type="text" class="form-control" placeholder="First name">
-            </div>
-            <div class="col">
-            <input type="text" class="form-control" placeholder="Last name">
-            </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
             </div>
         </div>
     </form>
     <form>
-    <div class="form-group">
-        <label for="inputAddress" style="font-weight: bold;">Email<span style="color:red">*</span></label>
-        <input type="text" class="form-control" id="inputAddress">
-    </div>
+        <div class="form-group">
+            <label for="inputAddress" style="font-weight: bold;">Email<span style="color:red">*</span></label>
+            <input type="text" class="form-control" id="inputAddress">
+        </div>
     </form>
     <form>
         <label style="color:black; font-weight: bold">Your Experience<span style="color:red">*</span></label>
         <div class="form-row">
-            <span class="fa fa-star fa-2x"></span>
-            <span class="fa fa-star  fa-2x"></span>
-            <span class="fa fa-star  fa-2x"></span>
-            <span class="fa fa-star fa-2x"></span>
+            <span class="fa fa-star fa-2x checked"></span>
+            <span class="fa fa-star  fa-2x checked"></span>
+            <span class="fa fa-star  fa-2x checked"></span>
+            <span class="fa fa-star fa-2x checked"></span>
             <span class="fa fa-star fa-2x"></span>
         </div>
-        <label style="color:black;font-size:x-small;">Overall, how would you rate your experience with us?<span style="color:red">*</span></label>
+        <label style="color:black;font-size:x-small;">Overall, how would you rate your experience with us?<span
+                style="color:red">*</span></label>
     </form>
     <label style="color:black;font-weight: bold;">How satisfied are you with<span style="color:red">*</span></label>
 
     <table class="table table-striped">
         <thead class="thead" style="width: 100px">
-          <tr>
-            <th scope="col"></th>
-            <th scope="col" style="text-align:center">Very Unsatisfied</th>
-            <th scope="col"style="text-align:center">Unsatisfied</th>
-            <th scope="col"style="text-align:center">Neutral</th>
-            <th scope="col"style="text-align:center">Satisfied</th>
-            <th scope="col"style="text-align:center">Very Satisfied</th>
-          </tr>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col" style="text-align:center">Very Unsatisfied</th>
+                <th scope="col" style="text-align:center">Unsatisfied</th>
+                <th scope="col" style="text-align:center">Neutral</th>
+                <th scope="col" style="text-align:center">Satisfied</th>
+                <th scope="col" style="text-align:center">Very Satisfied</th>
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row"style="width: 100px">Purchase</th>
-            <td><div class="form-check" style="text-align:center">
-                <div class="form-check">
-                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-                  </div>
-            </td>    
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-          </tr>
-          <tr>
-            <th scope="row">Service</th>
-            <td><div class="form-check" style="text-align:center">
-                <div class="form-check">
-                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-                  </div>
-            </td>    
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-          </tr>
-          <tr>
-            <th scope="row">Company Overall</th>
-            <td><div class="form-check" style="text-align:center">
-                <div class="form-check">
-                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-                  </div>
-            </td>    
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-          </tr>
+            <tr>
+                <th scope="row" style="width: 100px">Purchase</th>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <div class="form-check">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio5"
+                                id="blankRadio15" value="option1" aria-label="...">
+                        </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio5"
+                            id="blankRadio15" value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio5"
+                            id="blankRadio15" value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio5"
+                            id="blankRadio15" value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio5"
+                            id="blankRadio15" value="option1" aria-label="...">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Service</th>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <div class="form-check">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio6"
+                                id="blankRadio16" value="option1" aria-label="...">
+                        </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio6"
+                            id="blankRadio16" value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio6"
+                            id="blankRadio16" value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio6"
+                            id="blankRadio16" value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio6"
+                            id="blankRadio16" value="option1" aria-label="...">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Company Overall</th>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <div class="form-check">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio7"
+                                id="blankRadio17" value="option1" aria-label="...">
+                        </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio7"
+                            id="blankRadio17" value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio7"
+                            id="blankRadio17" value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio7"
+                            id="blankRadio17" value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio7"
+                            id="blankRadio17" value="option1" aria-label="...">
+                    </div>
+                </td>
+            </tr>
         </tbody>
-      </table>
+    </table>
 
-      <label style="color:black;font-weight: bold;">How likely are you to<span style="color:red">*</span></label>
+    <label style="color:black;font-weight: bold;">How likely are you to<span style="color:red">*</span></label>
 
     <table class="table table-striped">
         <thead class="table table-striped">
-          <tr>
-            <th scope="col"></th>
-            <th scope="col"style="text-align:center">Very Unlikely</th>
-            <th scope="col"style="text-align:center">Unlikely</th>
-            <th scope="col"style="text-align:center">Neutral</th>
-            <th scope="col"style="text-align:center">Likely</th>
-            <th scope="col"style="text-align:center">Very Likely</th>
-          </tr>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col" style="text-align:center">Very Unlikely</th>
+                <th scope="col" style="text-align:center">Unlikely</th>
+                <th scope="col" style="text-align:center">Neutral</th>
+                <th scope="col" style="text-align:center">Likely</th>
+                <th scope="col" style="text-align:center">Very Likely</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-            <th scope="row"style="width: 100px">Buy from us again</th>
-            <td ><div class="form-check" style="text-align:center;">
-                <div class="form-check">
-                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-                  </div>
-            </td>    
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-          </tr>
-          <tr>
-            <th scope="row">Recommend our product to others</th>
-            <td><div class="form-check" style="text-align:center">
-                <div class="form-check">
-                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-                  </div>
-            </td>    
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-          </tr>
-          <tr>
-            <th scope="row">Recommend our company to others</th>
-            <td><div class="form-check" style="text-align:center">
-                <div class="form-check">
-                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-                  </div>
-            </td>    
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-            <td><div class="form-check"style="text-align:center">
-                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-              </div></td>
-          </tr>
+            <tr>
+                <th scope="row" style="width: 100px">Buy from us again</th>
+                <td>
+                    <div class="form-check" style="text-align:center;">
+                        <div class="form-check1">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio1"
+                                id="blankRadio1" value="option1" aria-label="...">
+                        </div>
+                </td>
+                <td>
+                    <div class="form-check1" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio1" id="blankRadio1"
+                            value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check1" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio1" id="blankRadio1"
+                            value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check1" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio1" id="blankRadio1"
+                            value="option1" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check1" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio1" id="blankRadio1"
+                            value="option1" aria-label="...">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Recommend our product to others</th>
+                <td>
+                    <div class="form-check2" style="text-align:center">
+                        <div class="form-check2">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio2"
+                                id="blankRadio12" value="option12" aria-label="...">
+                        </div>
+                </td>
+                <td>
+                    <div class="form-check2" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio2"
+                            id="blankRadio12" value="option12" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check2" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio2"
+                            id="blankRadio12" value="option12" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check2" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio2"
+                            id="blankRadio12" value="option12" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check2" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio2"
+                            id="blankRadio12" value="option12" aria-label="...">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Recommend our company to others</th>
+                <td>
+                    <div class="form-check3" style="text-align:center">
+                        <div class="form-check3">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio3"
+                                id="blankRadio13" value="option13" aria-label="...">
+                        </div>
+                </td>
+                <td>
+                    <div class="form-check3" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio3"
+                            id="blankRadio13" value="option13" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check3" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio3"
+                            id="blankRadio13" value="option13" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check3" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio3"
+                            id="blankRadio13" value="option13" aria-label="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check3" style="text-align:center">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio3"
+                            id="blankRadio13" value="option13" aria-label="...">
+                    </div>
+                </td>
+            </tr>
         </tbody>
-      </table>
-      <label style="font-weight: bold;">Additional comments and Suggestions</label>
-      <div class="input-group">
+    </table>
+    <label style="font-weight: bold;">Additional comments and Suggestions</label>
+    <div class="input-group">
         <div class="input-group-prepend">
-          <span class="input-group-text"></span>
+            <span class="input-group-text"></span>
         </div>
-        <textarea class="form-control" aria-label=></textarea>
-      </div>
-      <button type="button" class="btn btn-light">Submit</button>
-
-   
-
+        <textarea class="form-control"></textarea>
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-dark" style="color: black;">Submit</button>
+    </div>
 </body>
 
 </html>
